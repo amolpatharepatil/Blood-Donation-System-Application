@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/black"
+
+    android:layout_height="match_parent"
+    tools:context=".Home_Activity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/brs_logo"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/uname"
+            android:text="Welcome,"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:textColor="@color/white"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="#FFA500"
+            android:layout_marginTop="20dp"/>
+       <androidx.appcompat.widget.AppCompatButton
+           android:layout_width="match_parent"
+           android:layout_height="80dp"
+           android:text="Donate Blood"
+           style="@style/TextAppearance.AppCompat.Display1"
+           android:textSize="30dp"
+           android:onClick="donblood"
+           android:background="@drawable/bybutton"
+           android:layout_marginTop="50dp"/>
+        <androidx.appcompat.widget.AppCompatButton
+           android:layout_width="match_parent"
+           android:layout_height="80dp"
+           android:text="Request Blood"
+           style="@style/TextAppearance.AppCompat.Display1"
+           android:textSize="30dp"
+            android:onClick="reqblood"
+           android:background="@drawable/bybutton"
+           android:layout_marginTop="50dp"
+            tools:ignore="OnClick" />
+        <androidx.appcompat.widget.AppCompatButton
+           android:layout_width="match_parent"
+           android:layout_height="80dp"
+           android:text="History"
+           style="@style/TextAppearance.AppCompat.Display1"
+           android:textSize="30dp"
+            android:onClick="history"
+           android:background="@drawable/bybutton"
+           android:layout_marginTop="50dp"/>
+        <androidx.appcompat.widget.AppCompatButton
+           android:layout_width="match_parent"
+           android:layout_height="80dp"
+            android:onClick="update"
+           android:text="Update Details"
+           style="@style/TextAppearance.AppCompat.Display1"
+           android:textSize="30dp"
+           android:background="@drawable/bybutton"
+           android:layout_marginTop="50dp"/>
+        <androidx.appcompat.widget.AppCompatButton
+           android:layout_width="match_parent"
+           android:layout_height="80dp"
+           android:text="Logout"
+           style="@style/TextAppearance.AppCompat.Display1"
+           android:textSize="30dp"
+            android:onClick="logout"
+           android:background="@drawable/bybutton"
+           android:layout_marginTop="50dp"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="#FFA500"
+            android:layout_marginTop="50dp"/>
+    </LinearLayout>
+</ScrollView>
